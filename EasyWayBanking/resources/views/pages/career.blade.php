@@ -35,6 +35,17 @@
 
     </div>
 
+    <div class="form-group">
+        {{Form::label('file', 'File')}}
+        {{Form::file('file', '', ['class' => 'form-control', 'placeholder' => 'Choose File'])}}
+
+    </div>
+
+    <div class="form-group">
+
+        {{Form::submit('Submit',  ['class' => 'btn btn-primary'])}}
+
+    </div>
 
     {!! Form::close() !!}
 

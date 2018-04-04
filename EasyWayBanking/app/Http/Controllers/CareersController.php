@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Career;
 use Illuminate\Http\Request;
 
 class CareersController extends Controller
@@ -34,7 +35,27 @@ class CareersController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validate($request, [
+            'firstname' => 'required',
+            'lastname' => 'required',
+            'email' => 'required',
+            'nic' => 'required',
+            'post' => 'required',
+            'file' => 'required',
+
+        ]);
+
+        $career = new Career;
+        $career->firstname = $request->input('firstname');
+        $career->lastname = $request->input('lastname');
+        $career->email = $request->input('email');
+        $career->nic = $request->input('nic');
+        $career->post = $request->input('post');
+        $career->file = $request->file('file');
+
+        $career->save();
+
+        return redirect('/create')->with('success', 'Submitted');
     }
 
     /**
