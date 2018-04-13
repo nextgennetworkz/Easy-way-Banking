@@ -14,7 +14,7 @@ class CareersController extends Controller
      */
     public function index()
     {
-       //
+        return view('pages.careers');
     }
 
     /**
@@ -24,7 +24,7 @@ class CareersController extends Controller
      */
     public function create()
     {
-        return view('pages.career');
+        //
     }
 
     /**
@@ -38,9 +38,12 @@ class CareersController extends Controller
         $this->validate($request, [
             'firstname' => 'required',
             'lastname' => 'required',
+            'mobile_number' => 'required',
+            'tele_number' => 'required',
             'email' => 'required',
-            'nic' => 'required',
-            'post' => 'required',
+            'ol' => 'required',
+            'al' => 'required',
+            'pro_qualification' => 'required',
             'file' => 'required',
 
         ]);
@@ -48,14 +51,17 @@ class CareersController extends Controller
         $career = new Career;
         $career->firstname = $request->input('firstname');
         $career->lastname = $request->input('lastname');
+        $career->mobile_number = $request->input('mobile_number');
+        $career->tele_number = $request->input('mobile_number');
         $career->email = $request->input('email');
-        $career->nic = $request->input('nic');
-        $career->post = $request->input('post');
+        $career->ol = $request->input('ol');
+        $career->al = $request->input('al');
+        $career->pro_qualification = $request->input('pro_qualification');
         $career->file = $request->file('file');
 
         $career->save();
 
-        return redirect('/create')->with('success', 'Submitted');
+        return redirect('/index')->with('success', 'Submitted');
     }
 
     /**
