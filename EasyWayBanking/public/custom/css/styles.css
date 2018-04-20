@@ -27,8 +27,13 @@
 body{
     font-family: Sanchez-Regular;
 }
-::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+.signing-sec ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
     color: #ffffff;
+
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+   font-family: Sanchez-Regular;
+
 }
 .navbar{
    margin-bottom: 0px;
@@ -129,6 +134,10 @@ h1, h2, h3{
     text-align: center;
     margin-bottom: 25px;
 }
+.form-content{
+    padding: 30px;
+    background: #ffffff;
+}
 .vacancies-main-container span{
     color: #1b6d85;
     font-size: 20px;
@@ -173,27 +182,30 @@ hr{
     margin-top: 30px;
 }
 .overlay-content h2{
-    color: #ffffff;
+    color: #6f6464;
     text-align: center;
 }
 .overlay-content span{
     font-size: 17px;
     text-align: left;
-    color: #ffffff;
+    color: #6f6464;
 }
 .overlay-content .form-content input{
     padding: 7px 7px;
-    border: none;
+    border: 1px solid #6f6464;
     margin-bottom: 10px;
     border-radius: 5px;
     width: 100%;
     position: relative;
 }
+.overlay-content .form-content textarea{
+    width: 100%;
+}
 .overlay-content .form-content .input-field{
     margin-bottom: 10px;
 }
 .overlay-content .form-content button{
-    float: right;
+
     padding: 9px 45px;
     border: none;
     border-radius: 8px;
@@ -228,4 +240,185 @@ hr{
         top: 15px;
         right: 35px;
     }
+}
+
+/*.......................................home page..................................*/
+.services-sec{
+    background: #f0f0f0;
+    padding: 20px 0px;
+}
+.services-sec .service-wrp .service-name{
+    background: #23527c;
+    font-size: 16px;
+    padding: 10px;
+    text-align: center;
+}
+.services-sec .service-wrp .service-name a{
+   text-decoration: none;
+    color: #FFFFFF;
+}
+.services-sec .service-wrp .img-wrp{
+    background: url("../images/Consumer-Loans.jpg");
+    background-size: cover;
+    min-height: 300px;
+
+}
+.services-sec .service-wrp .img-wrp .loan-types{
+    text-align: center;
+    padding: 83px;
+
+    display: none;
+}
+.services-sec .service-wrp .img-wrp .loan-types a{
+   text-decoration: none;
+    color: #FFFFFF;
+    font-size: 16px;
+}
+.services-sec .service-wrp .img-wrp .loan-types ul li{
+   list-style: none;
+}
+/*.......................................personal loan.....................................*/
+.personal-loan-banner-sec{
+    background-color: #eb5a2d;
+}
+.personal-loan-content{
+    font-family: Sanchez-Regular;
+    padding: 30px;
+    min-height: 65vh;
+}
+.personal-loan-content{
+    background: #ffebe5;
+}
+
+.personal-loan-content button{
+    color: #ffffff;
+    background: #1b6d85;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    margin-top: 10px;
+}
+
+.loan-form-content .loanForm {
+    background-color: #ffffff;
+    font-family: Raleway;
+    padding: 40px;
+    min-width: 300px;
+}
+
+.loan-form-content h1 {
+    text-align: center;
+}
+
+.loan-form-content input {
+    padding: 10px;
+    width: 100%;
+    font-size: 17px;
+    font-family: Raleway;
+    border: 1px solid #aaaaaa;
+}
+.loan-form-content select {
+    width: 100%;
+    margin-bottom: 10px;
+    height: 40px;
+}
+.loan-form-content textarea{
+    width: 100%;
+}
+.loan-form-content .radio_type{
+    width: 5%;
+    margin-bottom: 10px;
+}
+input.half{
+    width: 45%;
+}
+/* Mark input boxes that gets an error on validation: */
+.loan-form-content input.invalid {
+    background-color: #ffdddd;
+}
+
+/* Hide all steps by default: */
+.loan-form-content .tab {
+    display: none;
+    color: #000000;
+    font-family: Sanchez-Regular;
+    font-size: 16px;
+}
+
+.loan-form-content button {
+    background-color: #4CAF50;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 17px;
+    font-family: Raleway;
+    cursor: pointer;
+}
+
+.loan-form-content button:hover {
+    opacity: 0.8;
+}
+
+.loan-form-content #prevBtn {
+    background-color: #bbbbbb;
+}
+
+/* Make circles that indicate the steps of the form: */
+.loan-form-content .step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+}
+
+.loan-form-content .step.active {
+    opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.loan-form-content .step.finish {
+    background-color: #4CAF50;
+}
+
+/*.......................................business loan page.............................*/
+.business-loan-banner-sec{
+    background: #002d71;
+}
+.business-loan-content{
+    background: #d2ebf5;
+    font-family: Sanchez-Regular;
+    padding: 30px;
+    min-height: 65vh;
+}
+.business-loan-content button{
+    color: #ffffff;
+    background: #1b6d85;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    margin-top: 10px;
+}
+.appointment-sec{
+    position: relative;
+    z-index: 1;
+    min-height: 100vh;
+    font-family: Sanchez-Regular;
+    padding: 40px;
+    color: #FFFFFF;
+}
+.appointment-sec:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url("../images/appointment.jpg");
+    filter: brightness(30%);
+    background-size: cover;
 }

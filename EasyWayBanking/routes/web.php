@@ -12,11 +12,31 @@
 */
 
 Route::get('/', function () {
-    return view('pages.index');
+    return View::make('pages.index');
 });
 
-//Route::get('careers', function(){
-//    return view('pages.careers');
-//});
 
+Route::get('careers', function(){
+    return view('pages.careers');
+});
+
+Route::get('signing', function(){
+    return view('pages.signing');
+});
+
+Route::get('signup', function(){
+    return view('pages.signup');
+});
+Route::get('reset-password', function(){
+    return view('pages.reset-password');
+});
+Route::get('personal-loan', function(){
+    return view('pages.personal-loan');
+});
+Route::get('business-loan', function(){
+    return view('pages.business-loan');
+});
+Route::get('request-appointment', function(){
+    return view('pages.request-appointment');
+});
 Route::resource('careers','CareersController');

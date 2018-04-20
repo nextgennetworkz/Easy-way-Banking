@@ -1,7 +1,4 @@
-<?php
-//require_once 'header.php';
-//require_once 'navbar.php';
-//?>
+
 @extends('layouts.index')
 
 @section('content')
@@ -31,7 +28,7 @@
     <div id="myNav" class="overlay">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="overlay-content">
-            <div class="col-sm-push-2 col-sm-7">
+            <div class="col-sm-push-2 col-sm-8">
                 <div class="form-content">
                     <form  action="{{ route('careers.store') }}" method="post" enctype="multipart/form-data">
                         <h2>Enter Your Details</h2>
@@ -62,21 +59,18 @@
 
                         <div class="input-field">
                             <span>O/L results</span><br>
-                            <textarea name="ol" required="required"></textarea>
+                            <textarea name="ol" required="required" rows="5"></textarea>
                         </div>
 
                         <div class="input-field">
                             <span>A/L results</span><br>
-                            <textarea name="al" required="required"></textarea>
+                            <textarea name="al" required="required" rows="5"></textarea>
                         </div>
 
                         <div class="input-field">
                             <span>Professional qualifications</span><br>
-                            <textarea name="Pro_qualification" required="required"></textarea>
+                            <textarea name="Pro_qualification" required="required" rows="5"></textarea>
                         </div>
-
-
-
                         <div class="input-field">
                             <span>Upload Your CV</span><br>
                             <input  type="file" name="file">

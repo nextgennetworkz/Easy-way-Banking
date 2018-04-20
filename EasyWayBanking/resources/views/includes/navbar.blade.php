@@ -10,9 +10,9 @@
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">Page 1</a></li>
-                <li><a href="careers.php">Careers</a></li>
+                <li class="active"><a href="{{url('/')}}#">Home</a></li>
+                <li><a href="">Page 1</a></li>
+                <li><a href="{{url('careers')}}">Careers</a></li>
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1
                         <span class="caret"></span></a>
@@ -22,8 +22,8 @@
                         <li><a href="#">Page 1-3</a></li>
                     </ul>
                 </li>
-                <li><a href="signing.php">Sign in</a></li>
-                <li><a href="signup.php">Sign up</a></li>
+                <li><a href="{{url('signing')}}">Sign in</a></li>
+                <li><a href="{{url('signup')}}">Sign up</a></li>
             </ul>
         </div>
     </div>

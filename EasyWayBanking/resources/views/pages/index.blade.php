@@ -1,8 +1,3 @@
-<?php
-//require_once 'header.php';
-//require_once 'navbar.php';
-//?>
-
 @extends('layouts.index')
 
 @section('content')
@@ -46,9 +41,25 @@
         </div>
     </div>
 </section>
+<section class="services-sec">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="service-wrp">
+                    <div class="img-wrp">
+                        <div class="loan-types">
+                            <ul>
+                                <li><a href="{{url('personal-loan')}}">Personal Loans</a></li>
+                                <li><a href="{{url('business-loan')}}">Business Loans</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="service-name">
+                        <p><a href="#">Loans</a></p>
+                    </div>
+                </div>
+            </div>
+         </div>
+    </div>
+</section>
 @endsection
-
-<?php
-//require_once 'footer.php';
-//
-//?>

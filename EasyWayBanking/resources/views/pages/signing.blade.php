@@ -1,7 +1,6 @@
-<?php
-require_once 'header.php';
-require_once 'navbar.php';
-?>
+@extends('layouts.index')
+
+@section('content')
 <section class="signing-sec">
     <div class="col-sm-push-4 col-sm-5">
         <div class="signing-wrp">
@@ -16,6 +15,7 @@ require_once 'navbar.php';
                         <input type="password" placeholder="Password">
                         <span><i class="fa fa-lock"></i></span>
                     </div>
+                    <p>Forget password?</p><a href="{{url('reset-password')}}">Click here to reset</a>
                     <div class="input-wrp">
                        <button>Sign-in</button>
                     </div>
@@ -29,3 +29,4 @@ require_once 'navbar.php';
     </div>
 
 </section>
+@endsection
