@@ -272,7 +272,10 @@ hr{
 .services-sec .service-wrp .img-wrp .loan-types a{
    text-decoration: none;
     color: #FFFFFF;
-    font-size: 16px;
+    font-size: 20px;
+}
+.services-sec .service-wrp .img-wrp .loan-types a:hover{
+    text-decoration: underline;
 }
 .services-sec .service-wrp .img-wrp .loan-types ul li{
    list-style: none;
@@ -419,6 +422,35 @@ input.half{
     left: 0;
     right: 0;
     background: url("../images/appointment.jpg");
-    filter: brightness(30%);
+    filter: brightness(50%);
     background-size: cover;
+}
+.appointment-sec input{
+    width: 100%;
+    border: none;
+    padding: 10px;
+    color: #090909;
+    border-radius: 4px;
+}
+.appointment-sec textarea{
+    width: 100%;
+    border: none;
+    padding: 10px;
+    color: #090909;
+    border-radius: 4px;
+    resize: none;
+}
+.appointment-sec .input-wrp{
+    margin-bottom: 20px;
+}
+.appointment-sec span{
+    font-size: 16px;
+}
+.appointment-sec button{
+    background: #1b6d85;
+    color: #FFFFFF;
+    padding: 10px;
+    border: none;
+    font-size: 18px;
+    margin-top: 20px;
 }

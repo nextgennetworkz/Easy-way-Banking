@@ -7,12 +7,10 @@ function closeNav() {
 }
 $(".img-wrp").hover(function(){
     $('.loan-types').show();
-    $(this).css("filter", "brightness(70%)");
 
 },function(){
     $('.loan-types').hide();
-    $(this).css("filter", "brightness(100%)");
-});
+ });
 var currentTab = 0; // Current tab is set to be the first tab (0)
 showTab(currentTab); // Display the crurrent tab
 

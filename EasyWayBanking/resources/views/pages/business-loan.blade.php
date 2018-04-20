@@ -20,6 +20,7 @@
                 <li>And any other acceptable business purpose</li>
             </ul>
             <button onclick="openNav()">Apply Online</button>
+            <p>Want to meet our member?  <a href="{{url('request-appointment')}}">Request an Appointment </a></p>
     </div>
      <div id="myNav" class="overlay">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
